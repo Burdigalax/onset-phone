@@ -15,5 +15,5 @@ jobs:
         version: 10.x
 
     - name: Install dependencies & BUILD
-      working-directory: ./frontend
+      working-directory: ./ui
       run: npm install && npm run build        
