@@ -17,3 +17,7 @@ jobs:
     - name: Install dependencies & BUILD
       working-directory: ./ui
       run: npm install && npm run build        
+
+    - name: Commit & Push Build
+      working-directory: ./ui
+      run: git commit -am 'CICD' && git push
